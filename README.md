@@ -4,7 +4,7 @@
 
 ## 项目亮点
 
-- 监督学习：词级 TF-IDF、字级 TF-IDF 与线性 SVM 的混合特征分类器。
+- 监督学习：词级 TF-IDF、字级 TF-IDF 与线性 SVM 的混合特征分类器；BERT 预训练嵌入 + 逻辑回归分类器。
 - 无监督学习：基于 NMF 的新闻主题发现，输出每个主题的代表词。
 - 文本挖掘应用：关键词抽取、相似新闻检索、模型解释性词表。
 - 可复现交付：实验脚本会自动保存指标、混淆矩阵、主题词、关键词和模型文件。
@@ -65,6 +65,12 @@ python scripts/run_experiment.py --dataset clue-tnews --max-train 53360 --max-ev
 python scripts/run_experiment.py --dataset clue-tnews --max-train 53360 --max-eval 10000 --classifier word_lr --output results/tnews_word_lr
 ```
 
+如需运行 BERT 预训练嵌入模型（需要 GPU，CPU 也可运行但较慢）：
+
+```bash
+python scripts/run_experiment.py --dataset clue-tnews --classifier bert --output results/tnews_bert
+```
+
 运行后主要结果会保存到输出目录：
 
 - `metrics.json`：准确率、宏平均 F1、加权 F1。
@@ -94,6 +100,12 @@ streamlit run app.py
 ```
 
 页面会优先加载 `results/tnews_full/model.joblib` 中的完整分类模型；如果该文件不存在，则自动使用小样例快速训练一个演示模型。相似文本检索和主题查看默认基于内置小样例，便于课堂快速展示。
+
+## 源代码
+
+本项目源代码托管在 GitHub（请将仓库地址替换为你的实际地址）：
+
+- GitHub: https://github.com/你的用户名/Chinese-News-Text-Mining
 
 ## 可写论文题目
 
