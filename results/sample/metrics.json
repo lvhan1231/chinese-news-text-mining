@@ -1,0 +1,10 @@
+{
+  "accuracy": 0.4444444444444444,
+  "macro_f1": 0.45714285714285713,
+  "weighted_f1": 0.47619047619047616,
+  "dataset": "sample",
+  "classifier": "hybrid_svm",
+  "train_size": 16,
+  "eval_size": 9,
+  "num_labels": 5
+}

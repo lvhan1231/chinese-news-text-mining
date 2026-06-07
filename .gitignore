@@ -1,0 +1,45 @@
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
+.err.log
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+
+# Streamlit
+.streamlit/
+
+# Large model files (regeneratable)
+*.joblib
+*.pkl
+*.pt
+*.bin
+*.safetensors
+
+# Data (use links instead)
+data/raw/
+data/processed/
+
+# Outputs (temporary)
+outputs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/

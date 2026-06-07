@@ -1,0 +1,9 @@
+{
+  "accuracy": 0.4686666666666667,
+  "macro_f1": 0.4357725583847657,
+  "weighted_f1": 0.4679825998110622,
+  "dataset": "clue-tnews",
+  "train_size": 12000,
+  "eval_size": 3000,
+  "num_labels": 15
+}

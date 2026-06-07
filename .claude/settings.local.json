@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git rm *)",
+      "Bash(git commit -m 'Initial commit: Chinese news text mining system *)"
+    ]
+  }
+}
